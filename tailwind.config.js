@@ -13,6 +13,9 @@ module.exports = {
     extend: {
       fontFamily:{
         burtons:"burtons",
+      },
+      spacing:{
+        '98' : '33rem'
       }
     },
   },
