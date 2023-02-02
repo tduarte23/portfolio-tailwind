@@ -3,26 +3,29 @@ import {BsFillMoonStarsFill} from 'react-icons/bs'
 import {
   AiFillTwitterCircle,
   AiFillLinkedin,
-  AiFillGithub, AiOutlineGithub
+  AiFillGithub, AiOutlineGithub,
+  AiOutlineMore
 } from 'react-icons/ai'
 import { IconContext } from "react-icons";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import heroImg from "../public/heroImg.png"
 import Image from 'next/image'
 
 import { About } from './about';
+import { Projects } from './projects';
 
-import web1 from "../public/web1.png"
-import web2 from "../public/web2.png"
-import web3 from "../public/big.png"
-import web4 from "../public/web4.png"
-import web5 from "../public/qr.jpg"
-import web6 from "../public/web6.png"
+import { useState, useEffect } from 'react'
 
-import { useState } from 'react'
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+  const [navMenu, setNavMenu] = useState(true);
   
+   useEffect(() => {
+        AOS.init();
+      }, [])
+
   return (
     <div className={darkMode ? 'dark' : ""}>
       <Head>
@@ -33,12 +36,19 @@ export default function Home() {
       </Head>
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900 dark:text-white'>
         <section className="min-h-screen pt-5 pb-7">
-            <nav className='py-10 mb-12 flex justify-between'>
+            <nav className='py-10 mb-12 flex justify-between '>
               <h1 className='text-xl font-burtons '>Developd By <span className='text-gray-600 text-base'>TDuarte</span> </h1>
-              <ul className='flex items-center'>
+              <span className='lg:-z-10 relative '><AiOutlineMore className='cursor-pointer' onClick={() => setNavMenu(!navMenu)}/></span>
+              <ul className={navMenu ? 'lg:visible lg:flex lg:items-center lg:gap-4 invisible' : 'visible flex flex-col gap-3 z-10 lg:invisible'}>
+                <li>
+                  <a href="#" className='text-gray-600 text-base' >Sobre</a>
+                </li>
+                <li>
+                  <a href="#" className='text-gray-600 text-base' >Projetos</a>
+                </li>
                 <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl'/></li>
                 <li>
-                  <a href="#" className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8'>Resume</a>
+                  <a href="#" className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 border-none rounded-md '>Resume</a>
                 </li>
               </ul>
             </nav>
@@ -47,13 +57,12 @@ export default function Home() {
                 <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'
                 >Thomas Duarte Lopes</h2>
                 <h3 className='text-2xl py-2 md:text-3xl'>Devloper and Designer</h3>
-                <p className='text-md py-5 leading-8 text-gray-800'>
-                  Freelancer providin services for programim and designer needs.
-                  Join me down below and lets get cracking!
+                <p className='text-md py-5 leading-8 text-gray-800 dark:text-white'>
+                  Freelancer procurando oportunidades em desenvolvimento e design
                 </p>
                 <div className='text-5xl flex gap-16 py-3 text-gray-600'>       
                   <IconContext.Provider value={{ color: darkMode ? "white":"" }}>
-                        <AiFillTwitterCircle className='cursor-pointer' />
+                        <a href="https://www.linkedin.com/in/thomas-duarte-lopes-b32702220/" target="_blank"><AiFillTwitterCircle className='cursor-pointer' /></a>
                         <AiFillLinkedin className='cursor-pointer'/>
                         <AiFillGithub className='cursor-pointer'/>
 
@@ -67,80 +76,15 @@ export default function Home() {
                 </div>
               </div>
         </section>
-        <section>
-          <About />
-        </section>
-        <section>
-          <div>
-            <h2 className='text-4xl py-1'>Projetos</h2>
-            <p className='text-md py-2 leading-8 text-gray-80'>Apenas alguns treinamentos e projetos que fiz para estudo</p>
-             
-          </div>
-         
-<section class="bg-white dark:bg-gray-900">
-    <div class="container px-6 py-10 mx-auto">
-
-
-        <div class="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2">
-            <div class="lg:flex">
-                <Image class="object-cover w-full h-56 rounded-lg lg:w-64"  src={web3} alt="" />
-
-                <div class="flex flex-col justify-between py-6 lg:mx-6">
-                    <a href="#" class="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
-                        Landing Page de um escritorio de Advocacia 
-                    </a>
-                    
-                    <span class="text-sm text-gray-500 dark:text-gray-300">On: 20 October 2019</span>
-                </div>
-            </div>
-
-            <div class="lg:flex">
-               <Image class="object-cover w-full h-56 rounded-lg lg:w-64" objectFit='cover' src={web5} alt="" />
-
-                <div class="flex flex-col justify-between py-6 lg:mx-6">
-                    <a href="#" class="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
-                        Habits - Projeto Ponta a ponta do Rockeseat NLW 
-                    </a>
-
-                    <span class="text-sm text-gray-500 dark:text-gray-300">On: 20 October 2019</span>
-                </div>
-            </div>
-
-            <div class="lg:flex">
-                <Image class="object-cover w-full h-56 rounded-lg lg:w-64"  src={web1} alt="" />
-
-                <div class="flex flex-col justify-between py-6 lg:mx-6">
-                    <a href="#" class="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
-                        Pokedex - treinamento JS e chamada de API 
-                    </a>
-
-                    <span class="text-sm text-gray-500 dark:text-gray-300">On: 25 November 2020</span>
-                </div>
-            </div>
-
-            <div class="lg:flex">
-                <Image class="object-cover w-full h-56 rounded-lg lg:w-64" src={web2} alt="" />
-
-                <div class="flex flex-col justify-between py-6 lg:mx-6">
-                    <a href="#" class="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
-                        Music Player component
-                    </a>
-
-                    <span class="text-sm text-gray-500 dark:text-gray-300">On: 30 September 2020</span>
-                </div>
-            </div>
-
-           
-
-        </div>
-      </div>
-      <div className='flex justify-center pb-2'>
-          <button
-        className="py-2 px-4 bg-transparent text-black font-semibold border border-cyan-500 rounded hover:bg-gradient-to-r from-cyan-500 to-teal-500 hover:text-white hover:border-transparent transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0 dark:text-white"
-      >Mais no Git</button>
-</div>
-  </section>
-        </section>
+       
+          <section data-aos="fade-up">
+            <About />
+          </section>
+       
+        
+          <section data-aos="fade-up" className='mt-7 pb-4'>
+            <Projects />
+          </section>
       </main>
     </div>
   )

@@ -14,7 +14,7 @@ export function About(){
         <div className="lg:flex lg:flex-row">
         <div className="max-w-5xl">   
         <div>
-            <h3 className='text-5xl'>Sobre mim</h3>
+            <h3 className='text-5xl pb-3'>Sobre mim</h3>
                <p className='text-md py-2 leading-8 text-gray-80'>Olá sou Thomas , estudante de 25 anos de Sistemas para internet .Ja estudei
                 e trabalhei na aréa de Ti mas como suporte e agora tendo como foco total a carreira de Desenvolvedor em especial 
               
@@ -29,10 +29,10 @@ export function About(){
             <div className='flex flex-col items-center shadow-lg p-10 rounded-xl my-10 w-96 dark:bg-gray-800'>
               <Image src={design} width={100} height={100}/>
               <h3 className='text-lg font-medium pt-8 pb-2'>Code</h3>
-               <p className='text-gray-800 py-1'>Html, CSS, JS</p>
-              <p className='text-gray-800 py-1'>React e ReactNative</p>
-              <p className='text-gray-800 py-1'>JavaScript</p>
-              <p className='text-gray-800 py-1'>Tailwind</p>
+               <p className='text-gray-800 py-1 dark:text-white'>Html, CSS, JS</p>
+              <p className='text-gray-800 py-1 dark:text-white'>React e ReactNative</p>
+              <p className='text-gray-800 py-1 dark:text-white'>JavaScript</p>
+              <p className='text-gray-800 py-1 dark:text-white'>Tailwind</p>
               <h4 className='py-4 text-teal-600'>Python</h4>
             </div>
             <div className='flex flex-col items-center shadow-lg p-10 rounded-xl my-10 w-96 dark:bg-gray-800'>
@@ -40,9 +40,9 @@ export function About(){
               <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designes</h3>
               
               <h4 className='py-4 text-teal-600'>Git</h4>
-              <p className='text-gray-800 py-1'>Photoshop</p>
-              <p className='text-gray-800 py-1'>Illustrator</p>
-              <p className='text-gray-800 py-1'>Figma</p>
+              <p className='text-gray-800 py-1 dark:text-white'>Photoshop</p>
+              <p className='text-gray-800 py-1 dark:text-white'>Illustrator</p>
+              <p className='text-gray-800 py-1 dark:text-white'>Figma</p>
             </div>
             </div>   
           </div>
@@ -60,10 +60,12 @@ export function About(){
               <span><AiOutlineMore/></span>
               </div>
               <Image src={avatar} width={"100%"} style={ {borderRadius: "5px"}} />
-              <h3 className='flex text-lg font-medium pt-8 pb-2'>
-                <IconContext.Provider value={{ style: { transform: "rotateY(180deg)" } }}>
-                  <AiOutlineHeart /> <FaRegComment/>
-                </IconContext.Provider>
+              <h3 className='flex justify-between text-lg font-medium pt-5 pb-2'>
+                <div className='flex gap-1'>
+                  <IconContext.Provider value={{ style: { transform: "rotateY(180deg)",  } }}>
+                    <AiOutlineHeart className='fill-red-600 stroke-2'/> <FaRegComment/>
+                  </IconContext.Provider>
+                </div>
                 <IconContext.Provider value={{ style: { transform: "rotate(270deg)" } }}>
                   <BiTagAlt/>
                 </IconContext.Provider>
