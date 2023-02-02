@@ -62,7 +62,7 @@ export default function Home() {
                 </p>
                 <div className='text-5xl flex gap-16 py-3 text-gray-600'>       
                   <IconContext.Provider value={{ color: darkMode ? "white":"" }}>
-                        <a href="https://www.linkedin.com/in/thomas-duarte-lopes-b32702220/" target="_blank" rel="noreferrer"><AiFillTwitterCircle className='cursor-pointer' /></a>
+                        <a href="https://www.linkedin.com/in/thomas-duarte-lopes-b32702220/" target="_blank" rel="noopener noreferrer"><AiFillTwitterCircle className='cursor-pointer' /></a>
                         <AiFillLinkedin className='cursor-pointer'/>
                         <AiFillGithub className='cursor-pointer'/>
 
