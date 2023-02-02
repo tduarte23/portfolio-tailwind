@@ -27,7 +27,7 @@ export function About(){
           </div>
           <div className='lg:flex gap-10'>
             <div className='flex flex-col items-center shadow-lg p-10 rounded-xl my-10 w-96 dark:bg-gray-800'>
-              <Image src={design} width={100} height={100}/>
+              <Image src={design} width={100} height={100} alt="Code Image"/>
               <h3 className='text-lg font-medium pt-8 pb-2'>Code</h3>
                <p className='text-gray-800 py-1 dark:text-white'>Html, CSS, JS</p>
               <p className='text-gray-800 py-1 dark:text-white'>React e ReactNative</p>
@@ -36,7 +36,7 @@ export function About(){
               <h4 className='py-4 text-teal-600'>Python</h4>
             </div>
             <div className='flex flex-col items-center shadow-lg p-10 rounded-xl my-10 w-96 dark:bg-gray-800'>
-              <Image src={consulting} width={100} height={100}/>
+              <Image src={consulting} width={100} height={100} alt="consulting image"/>
               <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designes</h3>
               
               <h4 className='py-4 text-teal-600'>Git</h4>
@@ -52,14 +52,14 @@ export function About(){
                 <div className='flex flex-1 gap-1'>
                 <div className='rounded-2xl relative w-6 h-6 overflow-hidden flex justify-between gap-1'> 
                   
-                    <Image src={avatar} fill={true} objectFit="cover" />
+                    <Image src={avatar} fill={true} objectFit="cover" alt='avatar' />
                              
                 </div>
                     <span className='font-bold'> tduaarte1</span>   
               </div>
               <span><AiOutlineMore/></span>
               </div>
-              <Image src={avatar} width={"100%"} style={ {borderRadius: "5px"}} />
+              <Image src={avatar} width={"100%"} style={ {borderRadius: "5px"}} alt="Post Image" />
               <h3 className='flex justify-between text-lg font-medium pt-5 pb-2'>
                 <div className='flex gap-1'>
                   <IconContext.Provider value={{ style: { transform: "rotateY(180deg)",  } }}>

@@ -18,56 +18,56 @@ export function Projects(){
          
       </div>
      
-  <section class="bg-white dark:bg-gray-900">
-  <div class="container px-6 py-10 mx-auto">
+  <section className="bg-white dark:bg-gray-900">
+  <div className="container px-6 py-10 mx-auto">
 
 
-      <div class="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2">
-          <div class="lg:flex">
-              <Image class="object-cover w-full h-56 rounded-lg lg:w-64"  src={web3} alt="" />
+      <div className="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2">
+          <div className="lg:flex">
+              <Image className="object-cover w-full h-56 rounded-lg lg:w-64"  src={web3} alt="Project Image" />
 
-              <div class="flex flex-col justify-between py-6 lg:mx-6">
-                  <a href="#" class="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
+              <div className="flex flex-col justify-between py-6 lg:mx-6">
+                  <a href="#" className="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
                     Landing Page de um escritorio de Advocacia 
                 </a>
                 
-                <span class="text-sm text-gray-500 dark:text-gray-300">HTML CSS JS</span>
+                <span className="text-sm text-gray-500 dark:text-gray-300">HTML CSS JS</span>
             </div>
         </div>
 
-        <div class="lg:flex">
-           <Image class="object-cover w-full h-56 rounded-lg lg:w-64" objectFit='cover' src={web4} alt="" />
+        <div className="lg:flex">
+           <Image className="object-cover w-full h-56 rounded-lg lg:w-64" objectFit='cover' src={web4} alt="Project Image" />
 
-            <div class="flex flex-col justify-between py-6 lg:mx-6">
-                <a href="#" class="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
+            <div className="flex flex-col justify-between py-6 lg:mx-6">
+                <a href="#" className="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
                     Habits - Projeto Ponta a ponta do Rockeseat NLW 
                 </a>
 
-                <span class="text-sm text-gray-500 dark:text-gray-300">React ReactNative Prisma</span>
+                <span className="text-sm text-gray-500 dark:text-gray-300">React ReactNative Prisma</span>
             </div>
         </div>
 
-        <div class="lg:flex">
-            <Image class="object-cover w-full h-56 rounded-lg lg:w-64"  src={web1} alt="" />
+        <div className="lg:flex">
+            <Image className="object-cover w-full h-56 rounded-lg lg:w-64"  src={web1} alt="Project Image" />
 
-            <div class="flex flex-col justify-between py-6 lg:mx-6">
-                <a href="#" class="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
+            <div className="flex flex-col justify-between py-6 lg:mx-6">
+                <a href="#" className="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
                     Pokedex - treinamento JS e chamada de API 
                 </a>
 
-                <span class="text-sm text-gray-500 dark:text-gray-300">PokeAPI JS HTML</span>
+                <span className="text-sm text-gray-500 dark:text-gray-300">PokeAPI JS HTML</span>
             </div>
         </div>
 
-        <div class="lg:flex">
-            <Image class="object-cover w-full h-56 rounded-lg lg:w-64" src={web2} alt="" />
+        <div className="lg:flex">
+            <Image className="object-cover w-full h-56 rounded-lg lg:w-64" src={web2} alt="Project Image" />
 
-            <div class="flex flex-col justify-between py-6 lg:mx-6">
-                <a href="#" class="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
+            <div className="flex flex-col justify-between py-6 lg:mx-6">
+                <a href="#" className="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
                     Music Player component
                 </a>
 
-                <span class="text-sm text-gray-500 dark:text-gray-300">HTML CSS JS</span>
+                <span className="text-sm text-gray-500 dark:text-gray-300">HTML CSS JS</span>
             </div>
         </div>
 
