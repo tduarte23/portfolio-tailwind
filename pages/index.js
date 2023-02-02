@@ -36,7 +36,7 @@ export default function Home() {
       </Head>
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900 dark:text-white'>
         <section className="min-h-screen pt-5 pb-7">
-            <nav className='py-10 mb-12 flex justify-between '>
+            <div className='py-10 mb-12 flex justify-between '>
               <h1 className='text-xl font-burtons '>Developd By <span className='text-gray-600 text-base'>TDuarte</span> </h1>
               <span className='lg:-z-10 relative '><AiOutlineMore className='cursor-pointer' onClick={() => setNavMenu(!navMenu)}/></span>
               <ul className={navMenu ? 'lg:visible lg:flex lg:items-center lg:gap-4 invisible' : 'visible flex flex-col gap-3 z-10 lg:invisible'}>
@@ -51,7 +51,7 @@ export default function Home() {
                   <a href="#" className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 border-none rounded-md '>Resume</a>
                 </li>
               </ul>
-            </nav>
+            </div>
             <div className='flex flex-col items-center lg:flex-row lg:pt-14'>
               <div className='p-10 '>
                 <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'
@@ -62,7 +62,7 @@ export default function Home() {
                 </p>
                 <div className='text-5xl flex gap-16 py-3 text-gray-600'>       
                   <IconContext.Provider value={{ color: darkMode ? "white":"" }}>
-                        <a href="https://www.linkedin.com/in/thomas-duarte-lopes-b32702220/" target="_blank"><AiFillTwitterCircle className='cursor-pointer' /></a>
+                        <a href="https://www.linkedin.com/in/thomas-duarte-lopes-b32702220/" target="_blank" rel="noopener noreferrer"><AiFillTwitterCircle className='cursor-pointer' /></a>
                         <AiFillLinkedin className='cursor-pointer'/>
                         <AiFillGithub className='cursor-pointer'/>
 
