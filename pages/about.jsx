@@ -9,7 +9,7 @@ import avatar from "../public/avatar.jpeg"
 import consulting from "../public/consulting.png"
 import Image from 'next/image'
 
-export function About(){
+export default function About(){
     return (
         <div className="lg:flex lg:flex-row">
         <div className="max-w-5xl">   

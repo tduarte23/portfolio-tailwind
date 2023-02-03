@@ -12,8 +12,8 @@ import 'aos/dist/aos.css';
 import heroImg from "../public/heroImg.png"
 import Image from 'next/image'
 
-import { About } from './about';
-import { Projects } from './projects';
+import About from './about';
+import  Projects  from './projects';
 
 import { useState, useEffect } from 'react'
 

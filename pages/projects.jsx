@@ -9,7 +9,7 @@ import web4 from "../public/setup.png"
 
 
 
-export function Projects(){
+export default function Projects(){
     return(
         <>
         <div>
