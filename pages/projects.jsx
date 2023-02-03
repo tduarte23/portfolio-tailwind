@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 
 import web1 from "../public/poke1.png"
-import web2 from "../public/zxz.png"
+import web2 from "../public/music.png"
 import web3 from "../public/big.png"
 import web4 from "../public/setup.png"
 
