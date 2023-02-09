@@ -82,7 +82,7 @@ export default function Home() {
           </section>
        
         
-          <section data-aos="fade-up" className='mt-7 pb-4'>
+          <section  className='mt-7 pb-4'>
             <Projects />
           </section>
       </main>
