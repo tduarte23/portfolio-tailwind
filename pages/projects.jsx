@@ -27,7 +27,7 @@ export default function Projects(){
           <div className="lg:flex">        
             <Dialog.Root>
               <Dialog.Trigger asChild>
-              <div className='border-2 rounded-lg hover:border-red-400 hover:shadow-2xl'>
+              <div className=' rounded-lg  hover:border-red-400 hover:shadow-2xl'>
                 <Image className="object-cover w-full h-56 rounded-lg lg:w-64 cursor-pointer"  src={web3} alt="Project Image" />
               </div>
               </Dialog.Trigger>
@@ -96,34 +96,11 @@ export default function Projects(){
 
     </div>
     </div>
-        <div className='flex justify-center pb-2'>
+        <div className='flex justify-center pb-2 border-t-2'>
             <button
-            className="py-2 px-4 bg-transparent text-black font-semibold border border-cyan-500 rounded hover:bg-gradient-to-r from-cyan-500 to-teal-500 hover:text-white hover:border-transparent transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0 dark:text-white"
+            className=" mt-4 py-2 px-4 bg-transparent text-black font-semibold rounded hover:bg-gradient-to-r from-cyan-500 to-teal-500 hover:text-white hover:border-transparent transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0 dark:text-white"
             >Mais no Git</button>
         </div>
-        <Dialog.Root>
-        <Dialog.Trigger asChild>
-          <button className="Button violet" size="large">
-            Edit profile
-          </button>
-        </Dialog.Trigger>
-        <Dialog.Portal>
-          <Dialog.Overlay className="DialogOverlay" />
-          <Dialog.Content className="DialogContent">
-            <Image className="object-cover w-full rounded-lg"  src={web3} alt="Project Image" />
-            <div style={{ display: 'flex', marginTop: 25, justifyContent: 'flex-end' }}>
-              <Dialog.Close asChild>
-                
-              </Dialog.Close>
-            </div>
-            <Dialog.Close asChild>
-              <button className="IconButton" aria-label="Close">
-            
-              </button>
-            </Dialog.Close>
-          </Dialog.Content>
-        </Dialog.Portal>
-        </Dialog.Root>
     </section>
     </>
     )

@@ -71,7 +71,7 @@ export default function Home() {
                 </div>
                 </div>
                 
-                <div className='relative mx-auto mt-10 w-80 h-80 overflow-hidden lg:w-98 lg:h-98'>
+                <div className='relative mx-auto mt-10 w-80 h-80  lg:w-98 lg:h-98'>
                   <Image src={heroImg} objectFit="cover" fill={true} alt="Hero Image"/>
                 </div>
               </div>
