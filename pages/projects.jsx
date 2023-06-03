@@ -4,7 +4,7 @@ import React from 'react';
 import * as Dialog from '@radix-ui/react-dialog';
 
 import web1 from "../public/poke1.png"
-import web2 from "../public/music.png"
+import web2 from "../public/chat-app.PNG"
 import web3 from "../public/big.png"
 import web4 from "../public/setup.png"
 
@@ -24,11 +24,26 @@ export default function Projects(){
 
 
       <div className="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2">
+        <div className="lg:flex">
+            <a href="https://chat-app-six-beryl.vercel.app">
+
+                <Image className="object-cover w-full h-56 rounded-lg lg:w-64 border-4 hover:border-cyan-400" src={web2} alt="Project Image" />
+            </a>
+
+
+            <div className="flex flex-col justify-between py-6 lg:mx-6">
+                <a href="https://chat-app-six-beryl.vercel.app" className="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
+                    Chat - app funcional com backend no firebase
+                </a>
+
+                <span className="text-sm text-gray-500 dark:text-gray-300">REACT Syled-Components e Firebase</span>
+            </div>
+        </div>
           <div className="lg:flex">        
             <Dialog.Root>
               <Dialog.Trigger asChild>
               <div className=' rounded-lg  hover:border-red-400 hover:shadow-2xl'>
-                <Image className="object-cover w-full h-56 rounded-lg lg:w-64 cursor-pointer"  src={web3} alt="Project Image" />
+                <Image className="object-cover w-full h-56 rounded-lg lg:w-64 cursor-pointer border-4 hover:border-cyan-400"  src={web3} alt="Project Image" />
               </div>
               </Dialog.Trigger>
               <Dialog.Portal>
@@ -57,7 +72,7 @@ export default function Projects(){
         </div>
 
         <div className="lg:flex">
-           <Image className="object-cover w-full h-56 rounded-lg lg:w-64" objectFit='cover' src={web4} alt="Project Image" />
+           <Image className="object-cover w-full h-56 rounded-lg lg:w-64 border-4 hover:border-cyan-400" objectFit='cover' src={web4} alt="Project Image" />
 
             <div className="flex flex-col justify-between py-6 lg:mx-6">
                 <a href="#" className="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
@@ -69,7 +84,7 @@ export default function Projects(){
         </div>
 
         <div className="lg:flex">
-            <Image className="object-cover w-full h-56 rounded-lg lg:w-64"  src={web1} alt="Project Image" />
+            <Image className="object-cover w-full h-56 rounded-lg lg:w-64 border-4 hover:border-cyan-400"  src={web1} alt="Project Image" />
 
             <div className="flex flex-col justify-between py-6 lg:mx-6">
                 <a href="#" className="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
@@ -80,17 +95,6 @@ export default function Projects(){
             </div>
         </div>
 
-        <div className="lg:flex">
-            <Image className="object-cover w-full h-56 rounded-lg lg:w-64" src={web2} alt="Project Image" />
-
-            <div className="flex flex-col justify-between py-6 lg:mx-6">
-                <a href="#" className="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
-                    Music Player component
-                </a>
-
-                <span className="text-sm text-gray-500 dark:text-gray-300">HTML CSS JS</span>
-            </div>
-        </div>
 
        
 
