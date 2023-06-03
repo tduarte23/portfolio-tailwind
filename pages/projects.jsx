@@ -4,7 +4,7 @@ import React from 'react';
 import * as Dialog from '@radix-ui/react-dialog';
 
 import web1 from "../public/poke1.png"
-import web2 from "../public/chat-app.PNG"
+import web2 from "../public/chat.png"
 import web3 from "../public/big.png"
 import web4 from "../public/setup.png"
 
