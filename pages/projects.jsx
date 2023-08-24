@@ -64,7 +64,7 @@ export default function Projects(){
               </Dialog.Portal>
               </Dialog.Root>
             <div className="flex flex-col justify-between py-6 lg:mx-6">
-            <a href="#" className="text-xl font-semibold text-gray-800 dark:text-white ">
+            <a href="https://lari-home-page.vercel.app/" className="text-xl font-semibold text-gray-800 dark:text-white ">
                         Landing Page de um escritorio de Advocacia 
                     </a>
                 <span className="text-sm text-gray-500 dark:text-gray-300">HTML CSS JS</span>
