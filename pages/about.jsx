@@ -37,7 +37,7 @@ export default function About(){
             </div>
             <div className='flex flex-col items-center shadow-lg p-10 rounded-xl my-10 w-96 dark:bg-gray-800'>
               <Image src={consulting} width={100} height={100} alt="consulting image"/>
-              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designes</h3>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Designe</h3>
               
               <h4 className='py-4 text-teal-600'>Git</h4>
               <p className='text-gray-800 py-1 dark:text-white'>Photoshop</p>

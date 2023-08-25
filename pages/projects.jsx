@@ -15,7 +15,7 @@ export default function Projects(){
         <>
         <div>
         <h2 className='text-4xl py-1'>Projetos</h2>
-        <p className='text-md py-2 leading-8 text-gray-80'>Apenas alguns treinamentos e projetos que fiz para estudo</p>
+        <p className='text-md py-2 leading-8 text-gray-80'>Alguns treinamentos e projetos feitos:</p>
          
       </div>
      
@@ -50,15 +50,13 @@ export default function Projects(){
                 <Dialog.Overlay className="DialogOverlay" />
                 <Dialog.Content className="DialogContent">
                   <Image className="object-cover w-full rounded-lg cursor-pointer"  src={web3} alt="Project Image" />
-                  <div style={{ display: 'flex', marginTop: 25, justifyContent: 'flex-end' }}>
-                    <Dialog.Close asChild>
-                      
-                    </Dialog.Close>
-                  </div>
+                  <div style={{ display: 'flex', marginTop: 2, justifyContent: 'start', }}>
+                    
+                        <button className=" bg-transparent text-white font-semibold rounded bg-gradient-to-r from-cyan-500 to-teal-500 hover:text-white hover:border-transparent  dark:text-white"><a href="https://lari-home-page.vercel.app/">Vercell App Link</a></button>
+                    
+                    </div>
                   <Dialog.Close asChild>
-                    <button className="IconButton" aria-label="Close">
-                  
-                    </button>
+                    
                   </Dialog.Close>
                 </Dialog.Content>
               </Dialog.Portal>
@@ -67,15 +65,15 @@ export default function Projects(){
             <a href="https://lari-home-page.vercel.app/" className="text-xl font-semibold text-gray-800 dark:text-white ">
                         Landing Page de um escritorio de Advocacia 
                     </a>
-                <span className="text-sm text-gray-500 dark:text-gray-300">HTML CSS JS</span>
+                <span className="text-sm text-gray-500 dark:text-gray-300">HTML TAILWIND JS</span>
             </div>
         </div>
 
         <div className="lg:flex">
-           <Image className="object-cover w-full h-56 rounded-lg lg:w-64 border-4 hover:border-cyan-400" objectFit='cover' src={web4} alt="Project Image" />
-
+           <a href="https://github.com/tduarte23/NLW-Setup-Habit"><Image className="object-cover w-full h-56 rounded-lg lg:w-64 border-4 hover:border-cyan-400" objectFit='cover' src={web4} alt="Project Image" />
+           </a>
             <div className="flex flex-col justify-between py-6 lg:mx-6">
-                <a href="#" className="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
+                <a href="https://github.com/tduarte23/NLW-Setup-Habit" className="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
                     Habits - Projeto Ponta a ponta do Rockeseat NLW 
                 </a>
 
@@ -87,7 +85,7 @@ export default function Projects(){
             <Image className="object-cover w-full h-56 rounded-lg lg:w-64 border-4 hover:border-cyan-400"  src={web1} alt="Project Image" />
 
             <div className="flex flex-col justify-between py-6 lg:mx-6">
-                <a href="#" className="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
+                <a href="https://github.com/tduarte23/Pokedex" className="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
                     Pokedex - treinamento JS e chamada de API 
                 </a>
 
