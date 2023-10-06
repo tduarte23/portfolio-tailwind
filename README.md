@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-View the app on [Portfolio-Thomas](https://portfolio-tailwind-1mdf-g08evb5az-tduarte23.vercel.app)
+View the app on [Portfolio-Thomas](https://thomasportfolio.vercel.app)
 
 ## Getting Started
 
