@@ -15,7 +15,7 @@ export default function Projects(){
         <>
         <div>
         <h2 className='text-4xl py-1'>Projetos</h2>
-        <p className='text-md py-2 leading-8 text-gray-80'>Alguns treinamentos e projetos feitos:</p>
+        
          
       </div>
      

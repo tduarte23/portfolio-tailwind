@@ -15,11 +15,12 @@ export default function About(){
         <div className="max-w-5xl">   
         <div>
             <h3 className='text-5xl pb-3'>Sobre mim</h3>
-               <p className='text-md py-2 leading-8 text-gray-80'>Olá sou Thomas , estudante de 25 anos de Sistemas para internet .Ja estudei
-                e trabalhei na aréa de Ti mas como suporte e agora tendo como foco total a carreira de Desenvolvedor em especial 
+               <p className='text-md py-2 leading-8 text-gray-80'>Olá sou Thomas , estudante de 25 anos do curso de Sistemas para internet. Possuo experiencia  
+                ná aréa de Ti, como suporte e pré vendas, e agora transicionando com
+                 foco total para a carreira de Desenvolvedor em especial 
               
-               <span className='text-teal-500'> front end. </span> 
-               Possuo conhecimentos não só do front-end como back tambem e nos intervalos estudo Web Design e Product Design.
+               <span className='text-teal-500'> front-end. </span> 
+               Porém com conhecimentos e projetos feitos no back-end também, e nos intervalos estudo Web Design e Product Design.
                </p>
                <p className='text-md py-2 leading-8 text-gray-8-'>
                 Algumas das tecnlogias e ferramentas que uso e estudo.
@@ -37,7 +38,7 @@ export default function About(){
             </div>
             <div className='flex flex-col items-center shadow-lg p-10 rounded-xl my-10 w-96 dark:bg-gray-800'>
               <Image src={consulting} width={100} height={100} alt="consulting image"/>
-              <h3 className='text-lg font-medium pt-8 pb-2'>Designe</h3>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Design</h3>
               
               <h4 className='py-4 text-teal-600'>Git</h4>
               <p className='text-gray-800 py-1 dark:text-white'>Photoshop</p>
@@ -70,8 +71,7 @@ export default function About(){
                   <BiTagAlt/>
                 </IconContext.Provider>
               </h3>
-              <p>Creating elegant designs for your needs
-                following core design theory
+              <p>tduaarte1:
               </p>
             </div>
           </div>
